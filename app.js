@@ -28,17 +28,17 @@ function getDate(input, dateFormat) {
 			return {
 				unix: Number(moment(input).format("X")),
 				natural: moment(input).format("MMMM DD, YYYY")				
-			}
+			};
 		case 'unix':
 			return {
 				unix: Number(input),
 				natural: moment.unix(Number(input)).format("MMMM DD, YYYY")			
-			}
+			};
 		case null:
 			return {
 				natural: null,
 				unix: null
-			}
+			};
 	}
 }
 
